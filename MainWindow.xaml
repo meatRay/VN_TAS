@@ -23,7 +23,7 @@
 		</Grid>
 		<TextBlock Text="Developed FOSS by meatRay under an hour." Margin="10,0,10,35" Height="23" VerticalAlignment="Bottom"/>
 		<Label Margin="10,0,10,10" Height="25" VerticalAlignment="Bottom">
-			<Hyperlink NavigateUri="http://github.com/meatray/VN_TAS" RequestNavigate="Hyperlink_RequestNavigate">http://github.com/meatray/VN_TAS</Hyperlink>
+			<Hyperlink NavigateUri="https://github.com/meatRay/VN_TAS" RequestNavigate="Hyperlink_RequestNavigate">https://github.com/meatray/VN_TAS</Hyperlink>
 		</Label>
 	</Grid>
 </Window>

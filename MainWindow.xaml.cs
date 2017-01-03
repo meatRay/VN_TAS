@@ -68,8 +68,8 @@ namespace VN_TAS
 		private async Task GodsWork(CancellationToken cancel)
 		{
 			ClickDelayInput.IsEnabled = false;
-			int c_delay = -1;
-			if (!int.TryParse(ClickDelayInput.Text, out c_delay))
+			double c_delay = -1;
+			if (!double.TryParse(ClickDelayInput.Text, out c_delay))
 			{
 				MessageBox.Show("Invalid Time input for click speed.", "Invalid Input", MessageBoxButton.OK);
 				return;
@@ -89,6 +89,7 @@ namespace VN_TAS
 				await Task.Delay(_clickSpeed);
 			}
 			StatusLabel.Content = "Status.. Finished";
+			ClickDelayInput.IsEnabled = true;
 		}
 
 		private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
